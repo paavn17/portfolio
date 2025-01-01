@@ -7,9 +7,9 @@ function Navbar() {
       <a href=""> <h1 className="text-white text-3xl md:text-5xl font-semibold">P<span className='text-red-600'>a</span>v<span className='text-red-600'>an</span></h1></a>
     </div>
     <div>
-      <button className="text-white rounded-lg bg-red-500 text-sm md:text-xl py-2 px-3 hover:bg-zinc-900 hover:text-red-500">
+      <a href="https://drive.google.com/file/d/11OQhlrM0CHFrjKmhfWi_-j4o-ROXTdHn/view?usp=drive_link"><button className="text-white rounded-lg bg-red-500 text-sm md:text-xl py-2 px-3 hover:bg-zinc-900 hover:text-red-500">
         Resume. 
-      </button>
+      </button></a>
     </div>
   </nav>
   )

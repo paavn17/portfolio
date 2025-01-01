@@ -6,7 +6,8 @@ function Fore() {
 
   const data = [
     {
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dignissimos.",
+      Title:"Sealed-Ideas",
+      desc: "Developed a full-stack platform using React for the frontend, Node.js, Express.js and MongoDBfor database management, enabling users to share innovative ideas and connect with potential investors",
       filesize: ".9mb",
       close: true,
       tag: {
@@ -16,7 +17,8 @@ function Fore() {
       },
     },
     {
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro perferendis nemo commodi atque quis, repudiandae reiciendis blanditiis consequuntur in illum.",
+      Title:"Finance-Tracker",
+      desc: "Built a personal finance tracker application using React.js, designed to help users manage and track their financial expenses effectively with a clean and user-friendly interface",
       filesize: ".7mb",
       close: true,
       tag: {
@@ -26,7 +28,8 @@ function Fore() {
       },
     },
     {
-      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime explicabo commodi quisquam alias reprehenderit repudiandae.",
+      Title:"Scolar-Scout",
+      desc: "Developed a platform using React for the frontend, Firebase for backend services, and Redux for efficient state management, enabling users to explore various scholarships across India",
       filesize: "1.2mb",
       close: false,
       tag: {
