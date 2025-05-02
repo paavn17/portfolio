@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function Resume() {
   return (
-    <main className="min-h-screen bg-[#111] px-5 sm:px-0">
+    <main className="min-h-screen bg-[#111]">
       <div className="max-w-full mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
