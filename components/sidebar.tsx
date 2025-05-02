@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import { useState } from 'react';
 import { RotatingText } from '@/animations/name';
 import Image from 'next/image';
@@ -29,18 +29,18 @@ export default function Sidebar() {
       </button>
 
       {/* Avatar + Name + Role */}
-      <div className="flex flex-row sm:flex-col items-center sm:items-center justify-start sm:justify-center mb-6 mt-6 space-x-4 sm:space-x-0 sm:space-y-4">
-        <div className="bg-[#2a2a2a] p-2 sm:p-6 rounded-xl">
+      <div className="flex flex-row sm:flex-col items-center sm:items-center justify-start sm:justify-center mb-6 space-x-4 sm:space-x-0 sm:space-y-4">
+        <div className="bg-[#2a2a2a] p-2 sm:p-4 rounded-xl">
           <Image
             src="/user_avatar.png"
             alt="Avatar"
             width={80}
             height={80}
-            className="rounded-full"
+            className="rounded-full sm:w-24 sm:h-24 w-20 h-20"
           />
         </div>
 
-        <div className="flex flex-col justify-center items-start sm:items-center mt-0 sm:mt-4">
+        <div className="flex flex-col justify-center items-start sm:items-center sm:mt-4">
           <h1 className="text-lg sm:text-3xl font-semibold text-left sm:text-center">
             Pavan
           </h1>

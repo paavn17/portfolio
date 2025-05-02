@@ -36,7 +36,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <main className="min-h-screen bg-[#121212] sm:px-6 ">
+    <main className="min-h-screen bg-[#121212] px-0 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -68,8 +68,12 @@ const Portfolio = () => {
                 {/* Content */}
                 <div className="p-5 flex flex-col sm:flex-row justify-between sm:items-center gap-4">
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-yellow-400 mb-1">{project.title}</h3>
-                    <p className="text-sm sm:text-base text-gray-300">{project.category}</p>
+                    <h3 className="text-xl sm:text-2xl font-semibold text-yellow-400 mb-1">
+                      {project.title}
+                    </h3>
+                    <p className="text-sm sm:text-base text-gray-300">
+                      {project.category}
+                    </p>
                   </div>
 
                   {/* Icons */}

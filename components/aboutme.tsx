@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const Aboutme = () => {
   return (
-    <div className="px-3 sm:px-5">
+    <div className="px-0 sm:px-5">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -19,7 +19,7 @@ const Aboutme = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
         className="border-b-2 border-yellow-400 mb-4 w-16"
-      ></motion.div>
+      />
 
       <motion.p
         initial={{ opacity: 0, y: 20 }}
