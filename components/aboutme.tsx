@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const Aboutme = () => {
   return (
-    <div className=' px-5'>
+    <div className="px-3 sm:px-5">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -60,10 +60,26 @@ const Aboutme = () => {
         className="grid grid-cols-1 sm:grid-cols-2 gap-6"
       >
         {[
-          { title: "Web Design", desc: "The most modern and high-quality design made at a professional level.", icon: <FaRegLightbulb /> },
-          { title: "Web Development", desc: "High-quality development of sites at the professional level.", icon: <FaRegLightbulb /> },
-          { title: "Social Media Management", desc: "Handle the social media platforms of my clients.", icon: <FaRegLightbulb /> },
-          { title: "Photography", desc: "I make high-quality photos of any category at a professional level.", icon: <FaRegLightbulb /> },
+          {
+            title: 'Web Design',
+            desc: 'The most modern and high-quality design made at a professional level.',
+            icon: <FaRegLightbulb />,
+          },
+          {
+            title: 'Web Development',
+            desc: 'High-quality development of sites at the professional level.',
+            icon: <FaRegLightbulb />,
+          },
+          {
+            title: 'Social Media Management',
+            desc: 'Handle the social media platforms of my clients.',
+            icon: <FaRegLightbulb />,
+          },
+          {
+            title: 'Photography',
+            desc: 'I make high-quality photos of any category at a professional level.',
+            icon: <FaRegLightbulb />,
+          },
         ].map((item, idx) => (
           <motion.div
             key={idx}
