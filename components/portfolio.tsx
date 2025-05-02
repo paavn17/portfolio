@@ -10,14 +10,14 @@ const Portfolio = () => {
       category: "Web Development",
       previewLink: "https://ace-bot-nu.vercel.app/",
       codeLink: "https://github.com/paavn17/AceBot",
-      imageUrl: "/proj1.png",
+      imageUrl: "./proj1.png",
     },
     {
       title: "Sealed Ideas",
       category: "Mobile App",
       previewLink: "https://sealed-ideas.web.app",
       codeLink: "https://github.com/paavn17/sealed-ideas",
-      imageUrl: "/proj2.png",
+      imageUrl: "./proj2.png",
     },
     {
       title: "Project 3",
