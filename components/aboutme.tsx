@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const Aboutme = () => {
   return (
-    <div className="px-0 sm:px-5">
+    <div >
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

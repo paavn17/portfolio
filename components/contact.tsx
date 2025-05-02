@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <main className="min-h-screen bg-[#111] text-white px-0 sm:px-6">
+    <main className="min-h-screen bg-[#111] text-white">
       <ToastContainer position="bottom-right" autoClose={3000} />
 
       <div className="max-w-7xl mx-auto">
