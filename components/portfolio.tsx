@@ -36,7 +36,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <main className="min-h-screen bg-[#121212] px-0 sm:px-6">
+    <main className="min-h-screen bg-[#121212] px-0">
       <div className="max-w-7xl mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}

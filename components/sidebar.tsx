@@ -1,4 +1,4 @@
-'use client';
+"use client"
 import { useState } from 'react';
 import { RotatingText } from '@/animations/name';
 import Image from 'next/image';
@@ -18,7 +18,7 @@ export default function Sidebar() {
   };
 
   return (
-    <div className="w-full max-w-[100%] sm:max-w-[80%]  md:w-1/3 lg:w-1/4 bg-[#121212] rounded-2xl shadow-lg text-white p-6 shadow-xl mb-8 border border-gray-700 mx-auto relative pb-1 pt-1 ">
+    <div className="w-full max-w-[100%] sm:max-w-[80%]  md:w-1/3 lg:w-1/4 bg-[#121212] rounded-2xl shadow-lg text-white p-6 shadow-xl mb-4 border border-gray-700 mx-auto mt-1 relative pb-1 pt-1 ">
       
       {/* Toggle Button */}
       <button 
@@ -29,20 +29,20 @@ export default function Sidebar() {
       </button>
 
       {/* Avatar + Name + Role */}
-      <div className="flex flex-row sm:flex-col items-center sm:items-center justify-start sm:justify-center mb-6 space-x-4 sm:space-x-0 sm:space-y-4">
-        <div className="bg-[#2a2a2a] p-2 sm:p-4 rounded-xl">
+      <div className="flex flex-row sm:flex-col items-center sm:items-center justify-start sm:justify-center mb-6 mt-6 space-x-4 sm:space-x-0 sm:space-y-4">
+        <div className="bg-[#2a2a2a] p-2 sm:p-6 rounded-xl">
           <Image
             src="/user_avatar.png"
             alt="Avatar"
             width={80}
             height={80}
-            className="rounded-full sm:w-24 sm:h-24 w-20 h-20"
+            className="rounded-full"
           />
         </div>
 
-        <div className="flex flex-col justify-center items-start sm:items-center sm:mt-4">
+        <div className="flex flex-col justify-center items-start sm:items-center mt-0 sm:mt-4">
           <h1 className="text-lg sm:text-3xl font-semibold text-left sm:text-center">
-            D. Pavan
+            Pavan
           </h1>
           <div className="mt-1 sm:mt-3 w-full">
             <RotatingText
