@@ -42,7 +42,7 @@ export default function Sidebar() {
 
         <div className="flex flex-col justify-center items-start sm:items-center sm:mt-4">
           <h1 className="text-lg sm:text-3xl font-semibold text-left sm:text-center">
-            Pavan
+            D. Pavan
           </h1>
           <div className="mt-1 sm:mt-3 w-full">
             <RotatingText
