@@ -7,31 +7,31 @@ const Portfolio = () => {
   const projects = [
     {
       title: "Ace Bot",
-      category: "Web Development",
+      category: "AI assisted voice app",
       previewLink: "https://ace-bot-nu.vercel.app/",
       codeLink: "https://github.com/paavn17/AceBot",
       imageUrl: "./proj1.png",
     },
     {
       title: "Sealed Ideas",
-      category: "Mobile App",
+      category: "Full Stack Developmet",
       previewLink: "https://sealed-ideas.web.app",
       codeLink: "https://github.com/paavn17/sealed-ideas",
       imageUrl: "./proj2.png",
     },
     {
-      title: "Project 3",
-      category: "UI/UX Design",
-      previewLink: "#",
-      codeLink: "#",
-      imageUrl: "/path/to/image3.jpg",
-    },
-    {
-      title: "Project 4",
-      category: "Data Science",
+      title: "Meal Plan Generation App",
+      category: "SAAS",
       previewLink: "#",
       codeLink: "#",
       imageUrl: "/path/to/image4.jpg",
+    },
+    {
+      title: "Sticky Docs",
+      category: "Simple frontend",
+      previewLink: "https://doc-kappa-olive.vercel.app/",
+      codeLink: "https://github.com/paavn17/doc",
+      imageUrl: "./proj3.png",
     },
   ];
 

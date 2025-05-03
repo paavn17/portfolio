@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'Paavan | Portfolio',
+  title: 'Pavan',
   description: 'Personal Portfolio Website built with Next.js and Tailwind CSS',
   icons: {
     icon: '/favicon.ico', // favicon should be in /public

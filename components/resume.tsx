@@ -33,7 +33,7 @@ export default function Resume() {
             <li className="ms-4">
               <div className="absolute w-2.5 h-2.5 bg-yellow-500 rounded-full mt-1.5 -start-[5px] border-white border animate-ping-slow shadow-yellow-500 shadow-md"></div>
               <time className="mb-1 text-xs sm:text-sm font-medium text-yellow-500">2019 — 2021</time>
-              <h3 className="text-base sm:text-lg font-semibold text-white">Sasi Junior College</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-white">Ascent Classes</h3>
               <p className="text-sm text-gray-400">Intermediate in the stream of MPC</p>
             </li>
           </ol>
@@ -66,10 +66,11 @@ export default function Resume() {
           <div className="space-y-5 px-4 sm:px-10">
             {[ 
               { name: 'HTML', level: 90 },
-              { name: 'CSS, Tailwind And Bootstrap', level: 70 },
-              { name: 'JavaScript', level: 85 },
-              { name: 'React.js', level: 80 },
-              { name: 'Node.js', level: 75 },
+              { name: 'CSS, Tailwind And Bootstrap', level: 90 },
+              { name: 'React.js', level: 85 },
+              { name: 'Next.js', level: 80 },
+              { name: 'Firebase', level: 80},
+              { name: 'JavaScript', level: 70 },
             ].map((skill, index) => (
               <motion.div
                 key={skill.name}

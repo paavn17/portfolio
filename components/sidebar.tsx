@@ -18,7 +18,7 @@ export default function Sidebar() {
   };
 
   return (
-    <div className="w-full max-w-[100%] sm:max-w-[80%]  md:w-1/3 lg:w-1/4 bg-[#121212] rounded-2xl shadow-lg text-white p-6 shadow-xl mb-4 border border-gray-700 mx-auto mt-1 relative pb-1 pt-1 ">
+    <div className="w-full max-w-[100%] sm:max-w-[80%]  md:w-1/3 lg:w-1/4 bg-[#121212] rounded-2xl shadow-lg text-white p-6 shadow-xl mb-8 border border-gray-700 mx-auto relative pb-1 pt-1 ">
       
       {/* Toggle Button */}
       <button 
