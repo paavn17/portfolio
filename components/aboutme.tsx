@@ -17,14 +17,14 @@ const Aboutme = () => {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.1 }}
+        transition={{ delay: 0.3 }}
         className="border-b-2 border-yellow-400 mb-4 w-16"
       />
 
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.4 }}
         className="text-yellow-400 font-semibold mb-6 border-b border-gray-700 pb-2 inline-block"
       >
         I'm a front-end developer based in India. I like to build interactive web applications.
@@ -33,7 +33,7 @@ const Aboutme = () => {
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3 }}
+        transition={{ delay: 0.5 }}
         className="text-sm leading-relaxed text-gray-400"
       >
         My job is to build your website so that it is functional and user-friendly but at the same time attractive.
@@ -47,7 +47,7 @@ const Aboutme = () => {
       <motion.h3
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4 }}
+        transition={{ delay: 0.6 }}
         className="text-2xl font-bold mt-10 mb-4 text-white"
       >
         What I'm Doing
@@ -56,7 +56,7 @@ const Aboutme = () => {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5 }}
+        transition={{ delay: 0.7 }}
         className="grid grid-cols-1 sm:grid-cols-2 gap-6"
       >
         {[
@@ -85,7 +85,7 @@ const Aboutme = () => {
             key={idx}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 + idx * 0.1 }}
+            transition={{ delay: 0.8 + idx * 0.1 }}
             className="bg-[#1a1a1a] p-8 rounded-xl border border-gray-700 text-white shadow-md hover:scale-[1.02] transition-all duration-200"
           >
             <div className="flex items-center mb-3">

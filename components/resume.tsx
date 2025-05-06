@@ -77,7 +77,7 @@ export default function Resume() {
                 className="space-y-1"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ delay: index * 0.3 }}
               >
                 <div className="flex justify-between items-center text-xs sm:text-sm">
                   <span className="text-gray-100 font-medium">{skill.name}</span>
