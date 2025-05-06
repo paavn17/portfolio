@@ -47,14 +47,15 @@ export default function Resume() {
           <ol className="relative border-s border-white ml-3">
             <li className="mb-8 sm:mb-10 ms-4">
               <div className="absolute w-2.5 h-2.5 bg-yellow-500 rounded-full mt-1.5 -start-[5px] border-white border animate-ping-slow shadow-yellow-500 shadow-md"></div>
-              <time className="mb-1 text-xs sm:text-sm font-medium text-yellow-500">2021 — 2025</time>
-              <h3 className="text-base sm:text-lg font-semibold text-white">Vignan's Institute Of Information Technology</h3>
+              <time className="mb-1 text-xs sm:text-sm font-medium text-yellow-500">Jan 2025 — Apr 2025</time>
+              <h3 className="text-base sm:text-lg font-semibold text-white">Front-End Intern, Vasmi Groups</h3>
               <p className="text-sm text-gray-400">
-                Pursued my Under Graduation in the stream of Computer Science and Engineering
+                Completed a 3-month internship focused on front-end development. Gained valuable experience working in a professional environment, explored company work culture, and adapted to delivering quality work under pressure and deadlines.
               </p>
             </li>
           </ol>
         </section>
+
 
         {/* Skills Section */}
         <section>

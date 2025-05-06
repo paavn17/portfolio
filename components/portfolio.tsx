@@ -56,13 +56,13 @@ const Portfolio = () => {
                 className="relative bg-[#1e1e1e] rounded-2xl overflow-hidden shadow-xl group w-full max-w-[550px] mx-auto border border-gray-800 hover:shadow-yellow-500/20 transition-all"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.5 }}
+                transition={{ delay: index * 0.2 }}
               >
                 {/* Image */}
                 <img
                   src={project.imageUrl}
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-48 object-top object-cover transition-transform duration-300 group-hover:scale-105"
                 />
 
                 {/* Content */}

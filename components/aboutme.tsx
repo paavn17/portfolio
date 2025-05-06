@@ -3,6 +3,9 @@
 import React from 'react';
 import { FaRegLightbulb } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { SiCodechef } from "react-icons/si";
+import { SiLeetcode } from "react-icons/si";
+import { FaCode } from "react-icons/fa";
 
 const Aboutme = () => {
   return (
@@ -27,7 +30,7 @@ const Aboutme = () => {
         transition={{ delay: 0.4 }}
         className="text-yellow-400 font-semibold mb-6 border-b border-gray-700 pb-2 inline-block"
       >
-        I'm a front-end developer based in India. I like to build interactive web applications.
+        I'm a full stack developer and competitive programmer based in India. 
       </motion.p>
 
       <motion.p
@@ -36,12 +39,11 @@ const Aboutme = () => {
         transition={{ delay: 0.5 }}
         className="text-sm leading-relaxed text-gray-400"
       >
-        My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-        As a front-end developer, I create the visual and interactive elements of websites and web applications.
-        My work involves using HTML for structure, CSS for styling, and JavaScript for functionality.
-        I ensure that users have a seamless and engaging experience by making websites responsive, intuitive,
-        and accessible across various devices and browsers. Additionally, I collaborate with designers to implement
-        their visions and work with back-end developers to integrate front-end components with server-side logic.
+       As a full stack developer, I handle both the front-end and back-end of web applications — using technologies like HTML, CSS, JavaScript, React for the front end, and Node.js, Express, and MongoDB for the back end. I ensure seamless integration, responsive design, and optimized performance across devices and browsers.
+
+In addition to development, I'm passionate about problem-solving and algorithms. I'm a 3★ rated coder on CodeChef and have solved over 250 problems on LeetCode. My experience in competitive programming strengthens my ability to write efficient, scalable, and clean code under pressure.
+
+I thrive in collaborative environments, working closely with designers and backend engineers to bring ideas to life.
       </motion.p>
 
       <motion.h3
@@ -68,17 +70,21 @@ const Aboutme = () => {
           {
             title: 'Web Development',
             desc: 'High-quality development of sites at the professional level.',
-            icon: <FaRegLightbulb />,
+            icon: <FaCode />,
           },
           {
-            title: 'Social Media Management',
-            desc: 'Handle the social media platforms of my clients.',
-            icon: <FaRegLightbulb />,
+            title: 'CodeChef',
+            desc: (
+              <>
+                I am a 3<span className="text-yellow-500">★</span> coder on CodeChef and have solved around 500 problems.
+              </>
+            ),
+            icon: <SiCodechef />,
           },
           {
-            title: 'Photography',
-            desc: 'I make high-quality photos of any category at a professional level.',
-            icon: <FaRegLightbulb />,
+            title: 'Leetcode',
+            desc: 'Solved around 250+ problems on leetcode.',
+            icon: <SiLeetcode />,
           },
         ].map((item, idx) => (
           <motion.div

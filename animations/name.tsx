@@ -1,5 +1,5 @@
 "use client";
-
+import '../app/globals.css'
 import React, {
   forwardRef,
   useCallback,
@@ -210,6 +210,7 @@ export const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>((prop
                       ),
                     }}
                     className={cn("text-rotate-element", elementLevelClassName)}
+
                   >
                     {char}
                   </motion.span>
