@@ -5,22 +5,42 @@ import MainContent from "@/components/maincontent";
 import Sidebar from "@/components/sidebar";
 import ASCIIText from "@/animations/intro";
 
-
 export default function Home() {
   const [showIntro, setShowIntro] = useState(true);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const greetings = [
+    "Hello!",      // English
+    "नमस्ते!",     // Hindi
+    "హలో!",        // Telugu
+    "Hola!",       // Spanish
+    "Bonjour!"     // French
+  ];
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowIntro(false);
-    }, 3000); 
-    return () => clearTimeout(timer);
-  }, []);
+    if (currentIndex < greetings.length - 1) {
+      const interval = setInterval(() => {
+        setCurrentIndex((prevIndex) => prevIndex + 1);
+      }, 500); // 0.5 seconds
+      return () => clearInterval(interval);
+    } else {
+      const timer = setTimeout(() => {
+        setShowIntro(false);
+      }, 1000); // 1 sec delay before showing main content
+      return () => clearTimeout(timer);
+    }
+  }, [currentIndex]);
 
   if (showIntro) {
     return (
       <div className="fixed inset-0 flex items-center justify-center z-50 bg-black px-4 sm:px-8 overflow-auto">
-  <ASCIIText text="hey! Pavan here!" enableWaves={true} asciiFontSize={1} />
-</div>
+        <ASCIIText
+          key={currentIndex} // important to re-render animation
+          text={greetings[currentIndex]}
+          enableWaves={false}
+          asciiFontSize={2}
+        />
+      </div>
     );
   }
 
