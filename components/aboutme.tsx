@@ -39,11 +39,11 @@ const Aboutme = () => {
         transition={{ delay: 0.5 }}
         className="text-sm leading-relaxed text-gray-400"
       >
-       As a full stack developer, I handle both the front-end and back-end of web applications — using technologies like HTML, CSS, JavaScript, React for the front end, and Node.js, Express, and MongoDB for the back end. I ensure seamless integration, responsive design, and optimized performance across devices and browsers.
+        As a full stack developer, I handle both the front-end and back-end of web applications — using technologies like HTML, CSS, JavaScript, React for the front end, and Node.js, Express, and MongoDB for the back end. I ensure seamless integration, responsive design, and optimized performance across devices and browsers.
 
-In addition to development, I'm passionate about problem-solving and algorithms. I'm a 3★ rated coder on CodeChef and have solved over 250 problems on LeetCode. My experience in competitive programming strengthens my ability to write efficient, scalable, and clean code under pressure.
+        In addition to development, I'm passionate about problem-solving and algorithms. I'm a 3★ rated coder on CodeChef and have solved over 250 problems on LeetCode. My experience in competitive programming strengthens my ability to write efficient, scalable, and clean code under pressure.
 
-I thrive in collaborative environments, working closely with designers and backend engineers to bring ideas to life.
+        I thrive in collaborative environments, working closely with designers and backend engineers to bring ideas to life.
       </motion.p>
 
       <motion.h3
@@ -61,7 +61,7 @@ I thrive in collaborative environments, working closely with designers and backe
         transition={{ delay: 0.7 }}
         className="grid grid-cols-1 sm:grid-cols-2 gap-6"
       >
-        {[
+        {[  
           {
             title: 'Web Design',
             desc: 'The most modern and high-quality design made at a professional level.',
@@ -79,12 +79,20 @@ I thrive in collaborative environments, working closely with designers and backe
                 I am a 3<span className="text-yellow-500">★</span> coder on CodeChef and have solved around 500 problems.
               </>
             ),
-            icon: <SiCodechef />,
+            icon: (
+              <a href="https://www.codechef.com/users/pavan_031" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                <SiCodechef />
+              </a>
+            ),
           },
           {
             title: 'Leetcode',
             desc: 'Solved around 250+ problems on leetcode.',
-            icon: <SiLeetcode />,
+            icon: (
+              <a href="https://leetcode.com/u/pavan__011/" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                <SiLeetcode />
+              </a>
+            ),
           },
         ].map((item, idx) => (
           <motion.div
