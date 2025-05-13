@@ -8,8 +8,37 @@ import { SiLeetcode } from "react-icons/si";
 import { FaCode } from "react-icons/fa";
 
 const Aboutme = () => {
+  const items = [
+    {
+      title: 'Web Design',
+      desc: 'The most modern and high-quality design made at a professional level.',
+      icon: <FaRegLightbulb />,
+    },
+    {
+      title: 'Web Development',
+      desc: 'High-quality development of sites at the professional level.',
+      icon: <FaCode />,
+    },
+    {
+      title: 'CodeChef',
+      desc: (
+        <>
+          I am a 3<span className="text-yellow-500">★</span> coder on CodeChef and have solved around 500 problems.
+        </>
+      ),
+      icon: <SiCodechef />,
+      link: 'https://www.codechef.com/users/pavan_031',
+    },
+    {
+      title: 'Leetcode',
+      desc: 'Solved around 250+ problems on leetcode and participated in many contests.',
+      icon: <SiLeetcode />,
+      link: 'https://leetcode.com/u/pavan__011/',
+    },
+  ];
+
   return (
-    <div >
+    <div>
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -30,7 +59,7 @@ const Aboutme = () => {
         transition={{ delay: 0.4 }}
         className="text-yellow-400 font-semibold mb-6 border-b border-gray-700 pb-2 inline-block"
       >
-        I'm a full stack developer and competitive programmer based in India. 
+        I'm a full stack developer and competitive programmer based in India.
       </motion.p>
 
       <motion.p
@@ -61,54 +90,37 @@ const Aboutme = () => {
         transition={{ delay: 0.7 }}
         className="grid grid-cols-1 sm:grid-cols-2 gap-6"
       >
-        {[  
-          {
-            title: 'Web Design',
-            desc: 'The most modern and high-quality design made at a professional level.',
-            icon: <FaRegLightbulb />,
-          },
-          {
-            title: 'Web Development',
-            desc: 'High-quality development of sites at the professional level.',
-            icon: <FaCode />,
-          },
-          {
-            title: 'CodeChef',
-            desc: (
-              <>
-                I am a 3<span className="text-yellow-500">★</span> coder on CodeChef and have solved around 500 problems.
-              </>
-            ),
-            icon: (
-              <a href="https://www.codechef.com/users/pavan_031" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
-                <SiCodechef />
-              </a>
-            ),
-          },
-          {
-            title: 'Leetcode',
-            desc: 'Solved around 250+ problems on leetcode.',
-            icon: (
-              <a href="https://leetcode.com/u/pavan__011/" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
-                <SiLeetcode />
-              </a>
-            ),
-          },
-        ].map((item, idx) => (
-          <motion.div
-            key={idx}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8 + idx * 0.1 }}
-            className="bg-[#1a1a1a] p-8 rounded-xl border border-gray-700 text-white shadow-md hover:scale-[1.02] transition-all duration-200"
-          >
-            <div className="flex items-center mb-3">
-              <div className="text-yellow-400 text-xl mr-3">{item.icon}</div>
-              <h4 className="font-semibold text-lg text-yellow-400">{item.title}</h4>
-            </div>
-            <p className="text-sm">{item.desc}</p>
-          </motion.div>
-        ))}
+        {items.map((item, idx) => {
+          const content = (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8 + idx * 0.1 }}
+              className="bg-[#1a1a1a] p-8 rounded-xl border border-gray-700 text-white shadow-md hover:scale-[1.02] transition-all duration-200"
+            >
+              <div className="flex items-center mb-3">
+                <div className="text-yellow-400 text-xl mr-3">{item.icon}</div>
+                <h4 className="font-semibold text-lg text-yellow-400">{item.title}</h4>
+              </div>
+              <p className="text-sm">{item.desc}</p>
+            </motion.div>
+          );
+
+          return item.link ? (
+            <a
+              key={idx}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              {content}
+            </a>
+          ) : (
+            content
+          );
+        })}
       </motion.div>
     </div>
   );
