@@ -44,11 +44,11 @@ const Portfolio = () => {
       imageUrl: "./proj2.png",
     },
     {
-      title: "Meal Plan Generation App",
-      category: "SAAS",
-      previewLink: "#",
-      codeLink: "#",
-      imageUrl: "/path/to/image4.jpg",
+      title: "Financial Tracker",
+      category: "frontend",
+      previewLink: "https://finance-tracker-two-xi.vercel.app/",
+      codeLink: "https://github.com/paavn17/finance-tracker",
+      imageUrl: "./proj4.png",
     },
     {
       title: "Sticky Docs",
